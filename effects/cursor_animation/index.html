@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Cursor Follow on MouseMove</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsam
+        iure, quasi, voluptas, non harum eligendi aliquid fugiat dolorem culpa
+        reprehenderit. Cumque similique magnam, quidem nesciunt, repellat
+        architecto cupiditate consectetur facere consequuntur deleniti
+        voluptatem! Cupiditate repellat commodi non? Ut alias repellendus, iste
+        reprehenderit minus quos magni libero, dolor asperiores quidem delectus
+        culpa ea. Doloribus accusantium sunt odit deleniti consectetur explicabo
+        nobis itaque, aliquam nostrum nesciunt totam voluptatibus, error
+        repudiandae, vitae officia? Repudiandae repellendus ea consequatur
+        magnam sunt autem? Quia fugit voluptates quis reiciendis natus?
+        Adipisci, id distinctio. Sunt veritatis atque, similique repudiandae non
+        suscipit pariatur commodi itaque nam omnis qui.
+      </p>
+    </div>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <script>
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+      document.addEventListener("mousemove", function (e) {
+        cursor.style.cssText = cursor2.style.cssText =
+          "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      });
+    </script>
+  </body>
+</html>
